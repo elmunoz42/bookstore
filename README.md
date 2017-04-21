@@ -1,6 +1,6 @@
 ## Description
 
-Web App for bookstore.
+Web App for bookstore with 4 different user authentication levels. It allows all users to see reviews, about page and locations. It allows authenticated users to see special promotions and it allows reviewer status users to post reviews and articles about books.
 
 This website was generated with [Drupal 7.54](https://www.drupal.org/project/drupal/releases/7.54).
 
@@ -19,7 +19,7 @@ This website was generated with [Drupal 7.54](https://www.drupal.org/project/dru
 |DONE|Name the block and display it in an easily visible region. Add at least 4 book reviews to verify that it is working.|
 |DONE|Add the "New Books" view to your "Book Review" feature and then recreate it, generating the files in your modules directory as usual, and then commit your changes.|
 |DONE|Create a custom "Reviewer" role. The Reviewer role should have all the same permissions as an authenticated user, and also be able to create new book reviews. They should be able to edit and delete their own book reviews, but not anyone else's. Create an account for a user who is a Reviewer to test it out.|
-|PARTIAL|Create a special coupon to display as a block on the front page which is visible to authenticated users and not anonymous users. It should say something like "This week: use this coupon code to get 25% off on all Science Fiction!"|
+|DONE|Create a special coupon to display as a block on the front page which is visible to authenticated users and not anonymous users. It should say something like "This week: use this coupon code to get 25% off on all Science Fiction!"|
 
 ## Setup
 1. Clone repository from https://github.com/elmunoz42/bookstore.git
@@ -50,57 +50,6 @@ This website was generated with [Drupal 7.54](https://www.drupal.org/project/dru
  - Host: local
  - All privileges for `bookstore`
 
-
-## Project creation
-* Download latest Drupal 7.x and unzip package.
-* Rename to desired **`<repo_pathname>`** and set as working directory in CLI.
-* Run `$ cp sites/default/default.settings.php sites/default/settings.php`.
-* Run `$ chmod -R a+w sites/default`.
-* Create database (see bellow)
-* Install Drupal core
- - Visit **`localhost:8888`** in browser
- - Settings:
-   - Standard
-   - English
-   - Database:
-     - Type: MySQL
-     - Name: `bookstore`
-     - Database admin: `bookstore`
-     - Password: `bookstore`
-     - Host: `127.0.0.1`
-     - Database port: `8889`
-   - Site:
-     - Name: 'Drupal Practice'
-     - Admin: `bookstore`
-     - Password: `bookstore`
-     - Default country: United States
-     - Timezone: America/Los_Angeles
-* Export database for versioning (see bellow)
-
-
-### Database creation
-* In phpMyAdmin:
- - On 'Databases' tab
-   - Create `<database_name>`
-   - Collation: utf8_general_ci
- - On 'Privileges' tab for `<database_name>`:
-   - Add user
-   - Username: `<database_admin>`
-   - Password: `<database_admin_password>`
-   - Host: local
-   - All privileges for `<database_name>`
-
-### Export database
-* Visit **`localhost:8888/phpMyAdmin`** in browser
-* Click 'Export' tab for `<database_name>`
-* Choose 'Custom'
- - Select all tables
- - Save output to file:
-  - Character set: utf-8
-  - Compression: zipped
- - Format: SQL
- - Object creation: Check all except 'IF NOT EXISTS'
-* Move exported zip into **`<repo_pathname>/sites/db-backup>`**, replacing contents if necessary
 
 ## Technologies Used
 
