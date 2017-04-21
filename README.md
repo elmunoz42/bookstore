@@ -19,7 +19,7 @@ This website was generated with [Drupal 7.54](https://www.drupal.org/project/dru
 |DONE|Name the block and display it in an easily visible region. Add at least 4 book reviews to verify that it is working.|
 |DONE|Add the "New Books" view to your "Book Review" feature and then recreate it, generating the files in your modules directory as usual, and then commit your changes.|
 |DONE|Create a custom "Reviewer" role. The Reviewer role should have all the same permissions as an authenticated user, and also be able to create new book reviews. They should be able to edit and delete their own book reviews, but not anyone else's. Create an account for a user who is a Reviewer to test it out.|
-|TODO|Create a special coupon to display as a block on the front page which is visible to authenticated users and not anonymous users. It should say something like "This week: use this coupon code to get 25% off on all Science Fiction!"|
+|PARTIAL|Create a special coupon to display as a block on the front page which is visible to authenticated users and not anonymous users. It should say something like "This week: use this coupon code to get 25% off on all Science Fiction!"|
 
 ## Setup
 1. Clone repository from https://github.com/elmunoz42/bookstore.git

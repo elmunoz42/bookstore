@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Discount Coupon feature.
+ */
+
+include_once 'discount_coupon.features.inc';
