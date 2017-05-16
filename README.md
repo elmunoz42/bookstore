@@ -1,3 +1,6 @@
+# Bookstore
+by _Carlos Muñoz Kampff_
+
 ## Description
 
 Web App for bookstore with 4 different user authentication levels. It allows all users to see reviews, about page and locations. It allows authenticated users to see special promotions and it allows reviewer status users to post reviews and articles about books.
